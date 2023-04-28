@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="google_clone.css">
+</head>
+<body>
+    <style>
+       
+    </style>
+    <div class="clone">
+    <div class="cont1">
+        <div class="c1">Google</div>
+        <div class="c2" ><input id="gsearch" placeholder="search.." type="text" name="search"></input><button onclick="Fun()">submit</button></div>
+        <div class="c3">
+            <div class="b"><a href="https://www.youtube.com">youtube</a></div>
+            <div class="b"><a href="https://www.instagram.com">instagram</a></div>
+            <div class="b"><a href="https://mail.google.com/">Gmail</a></div>
+
+        </div>
+    </div>
+    </div>
+    
+</body>
+<script>
+function Fun() {
+  val = document.getElementById("gsearch").value;
+  location.replace(`https://www.google.com/search?q=${val}`)
+}
+
+</script>
+</html>
